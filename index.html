@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sharada Technical Mind Tutorials - NIMCET, Karnataka PGCET and programming language tutorials.">
+  <meta name="description" content="SHARADA Technical Mind Tutorials - NIMCET, Karnataka PGCET and programming language tutorials.">
   <meta name="theme-color" content="#090909">
-  <title>Sharada Technical Mind Tutorials</title>
+  <title>SHARADA Technical Mind Tutorials</title>
   <style>
     :root{--gold:#e7ad20;--gold2:#ffd65a;--ink:#080808;--panel:#151515;--muted:#c8c1b0;--white:#fff}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090909;color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
@@ -42,7 +42,7 @@
 <body>
 <header class="header">
   <div class="wrap nav-wrap">
-    <a class="brand" href="#home"><img src="logo.jpeg" alt="Sharada Technical Mind Tutorials logo"><span><strong>SHARADA</strong><small>TECHNICAL MIND TUTORIALS</small></span></a>
+    <a class="brand" href="#home"><img src="logo.jpeg" alt="SHARADA Technical Mind Tutorials logo"><span><strong>SHARADA</strong><small>TECHNICAL MIND TUTORIALS</small></span></a>
     <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav>
       <a href="#home">Home</a><a href="#about">About</a><a href="#tutorials">Tutorials</a><a href="#registration">Registration</a><a href="#contact">Contact</a>
@@ -55,7 +55,7 @@
       <p class="lead">Focused tutorials for MCA entrance examinations and programming languages. Learn concepts, practise regularly and grow your technical confidence.</p>
       <div class="actions"><a class="btn primary" href="#registration">Register Now</a><a class="btn outline" href="#tutorials">Explore Tutorials</a></div>
     </div>
-    <div class="hero-logo"><img src="logo.jpeg" alt="Official Sharada Technical Mind Tutorials emblem"></div>
+    <div class="hero-logo"><img src="logo.jpeg" alt="Official SHARADA Technical Mind Tutorials emblem"></div>
   </div></section>
   <section id="about"><div class="wrap about-box"><p class="eyebrow">Welcome to</p><h2><span class="gold">SHARADA TECHNICAL MIND TUTORIALS</span></h2><p>Our learning initiative focuses on two areas: preparation support for NIMCET and Karnataka PGCET, and foundational programming-language tutorials. Our aim is to make learning clear, structured and practice-oriented.</p></div></section>
   <section id="tutorials"><div class="wrap"><div class="section-head"><p class="eyebrow">What you can learn</p><h2>Tutorial Programmes</h2><p>Choose the learning path that matches your goal.</p></div>
@@ -77,11 +77,11 @@
       <article class="register-card"><div class="icon">🎓</div><h3>NIMCET / PGCET Registration</h3><p>Register for MCA entrance-exam tutorial classes.</p><a class="btn primary form-link" data-form="entrance" href="#">Register for Entrance Tutorials</a></article>
       <article class="register-card"><div class="icon">👩‍💻</div><h3>Programming Registration</h3><p>Register for C, Java, Python and other programming tutorials.</p><a class="btn primary form-link" data-form="programming" href="#">Register for Programming</a></article>
     </div>
-    <div class="notice">Registration links will be activated after the two separate Google Forms are created and their responder links are added.</div>
+    <div class="notice">Choose the correct programme and use its registration button. Each button opens its own Google Form.</div>
   </div></section>
-  <section class="contact" id="contact"><div class="wrap"><p class="eyebrow">Get in touch</p><h2>Contact Sharada Technical Mind Tutorials</h2><p>For tutorial details, schedules and registration support, contact the institute.</p><p>Email: <a href="mailto:sharadatechnicalmind@gmail.com">sharadatechnicalmind@gmail.com</a></p><p>Location: Mahalingapura, Karnataka, India</p></div></section>
+  <section class="contact" id="contact"><div class="wrap"><p class="eyebrow">Get in touch</p><h2>Contact SHARADA Technical Mind Tutorials</h2><p>For tutorial details, schedules and registration support, contact the institute.</p><p>Email: <a href="mailto:sharadatechnicalmind@gmail.com">sharadatechnicalmind@gmail.com</a></p><p>Location: Mahalingapura, Karnataka, India</p></div></section>
 </main>
-<footer><p><strong>SHARADA TECHNICAL MIND TUTORIALS</strong></p><p>Learn • Prepare • Grow</p><small>© <span id="year"></span> Sharada Technical Mind Tutorials. All rights reserved.</small></footer>
+<footer><p><strong>SHARADA TECHNICAL MIND TUTORIALS</strong></p><p>Learn • Prepare • Grow</p><small>© <span id="year"></span> SHARADA Technical Mind Tutorials. All rights reserved.</small></footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   const menu = document.querySelector('.menu'), nav = document.querySelector('nav');
@@ -89,8 +89,8 @@
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
   // Add each Google Form responder URL to the matching link below.
   const formLinks = {
-    entrance: 'PASTE_NIMCET_PGCET_GOOGLE_FORM_LINK_HERE',
-    programming: 'PASTE_PROGRAMMING_GOOGLE_FORM_LINK_HERE'
+    entrance: 'https://docs.google.com/forms/d/e/1FAIpQLSdtf_014KcxOKT2DFTzT-QOLq5zB93apxy6IXWk0Ji6kwhuzg/viewform?usp=sharing&ouid=106240103546060353935',
+    programming: 'https://docs.google.com/forms/d/e/1FAIpQLSd970Fzw2Yjoe3TrvrmP-6m5kXQjKenDbhFBGmw8hlps0dQdQ/viewform?usp=sharing&ouid=106240103546060353935'
   };
   document.querySelectorAll('.form-link').forEach(link => {
     const url = formLinks[link.dataset.form];
