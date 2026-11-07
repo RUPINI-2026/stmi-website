@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SHARADA Technical Mind Tutorials - NIMCET, Karnataka PGCET and programming language tutorials.">
+
+  <title>SHARADA Technical Mind Tutorials | NIMCET, PGCET & Programming</title>
+  <meta name="description" content="Join SHARADA Technical Mind Tutorials for NIMCET, Karnataka PGCET MCA entrance preparation and C, Java, Python, HTML, CSS and JavaScript programming tutorials.">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#090909">
-  <title>SHARADA Technical Mind Tutorials</title>
+
+  <link rel="canonical" href="https://subtle-quokka-b00e36.netlify.app/">
+
+  <meta property="og:title" content="SHARADA Technical Mind Tutorials">
+  <meta property="og:description" content="Learn NIMCET, Karnataka PGCET and programming languages with SHARADA Technical Mind Tutorials.">
+  <meta property="og:url" content="https://subtle-quokka-b00e36.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://subtle-quokka-b00e36.netlify.app/logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <style>
     :root{--gold:#e7ad20;--gold2:#ffd65a;--ink:#080808;--panel:#151515;--muted:#c8c1b0;--white:#fff}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090909;color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
@@ -94,15 +106,18 @@
   const menu = document.querySelector('.menu'), nav = document.querySelector('nav');
   menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
-  // Add each Google Form responder URL to the matching link below.
+
   const formLinks = {
     entrance: 'https://docs.google.com/forms/d/e/1FAIpQLSdtf_014KcxOKT2DFTzT-QOLq5zB93apxy6IXWk0Ji6kwhuzg/viewform?usp=sharing&ouid=106240103546060353935',
     programming: 'https://docs.google.com/forms/d/e/1FAIpQLSd970Fzw2Yjoe3TrvrmP-6m5kXQjKenDbhFBGmw8hlps0dQdQ/viewform?usp=sharing&ouid=106240103546060353935'
   };
+
   document.querySelectorAll('.form-link').forEach(link => {
     const url = formLinks[link.dataset.form];
     if (url && url.startsWith('https://docs.google.com/forms/')) {
-      link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
     } else {
       link.addEventListener('click', event => {
         event.preventDefault();
